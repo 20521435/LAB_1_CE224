@@ -487,7 +487,7 @@ Disassembly of section .text:
  8000660:	f242 3627 	movw	r6, #8999	; 0x2327
  8000664:	e9c5 3600 	strd	r3, r6, [r5]
  8000668:	4628      	mov	r0, r5
- 800066a:	f241 3387 	movw	r3, #4999	; 0x1387
+ 800066a:	f242 730f 	movw	r3, #9999	; 0x270f
  800066e:	e9cd 4403 	strd	r4, r4, [sp, #12]
  8000672:	60eb      	str	r3, [r5, #12]
  8000674:	61ac      	str	r4, [r5, #24]
@@ -508,7 +508,7 @@ Disassembly of section .text:
  8000698:	e9cd 0003 	strd	r0, r0, [sp, #12]
  800069c:	e9c4 3600 	strd	r3, r6, [r4]
  80006a0:	61a0      	str	r0, [r4, #24]
- 80006a2:	f640 63a5 	movw	r3, #3749	; 0xea5
+ 80006a2:	f641 534b 	movw	r3, #7499	; 0x1d4b
  80006a6:	4620      	mov	r0, r4
  80006a8:	60e3      	str	r3, [r4, #12]
  80006aa:	f000 fe6d 	bl	8001388 <HAL_TIM_Base_Init>

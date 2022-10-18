@@ -363,7 +363,7 @@ void HAL_TIM_PeriodElapsedCallback(TIM_HandleTypeDef *htim)
  80004f2:	b082      	sub	sp, #8
  80004f4:	af00      	add	r7, sp, #0
  80004f6:	6078      	str	r0, [r7, #4]
-	//static uint16_t cnt = 0;
+	
 	if (htim->Instance == htim6.Instance)
  80004f8:	687b      	ldr	r3, [r7, #4]
  80004fa:	681a      	ldr	r2, [r3, #0]
@@ -632,9 +632,9 @@ static void MX_TIM6_Init(void)
  8000668:	4b11      	ldr	r3, [pc, #68]	; (80006b0 <MX_TIM6_Init+0x64>)
  800066a:	2200      	movs	r2, #0
  800066c:	609a      	str	r2, [r3, #8]
-  htim6.Init.Period = 4999;
+  htim6.Init.Period = 9999;
  800066e:	4b10      	ldr	r3, [pc, #64]	; (80006b0 <MX_TIM6_Init+0x64>)
- 8000670:	f241 3287 	movw	r2, #4999	; 0x1387
+ 8000670:	f242 720f 	movw	r2, #9999	; 0x270f
  8000674:	60da      	str	r2, [r3, #12]
   htim6.Init.AutoReloadPreload = TIM_AUTORELOAD_PRELOAD_DISABLE;
  8000676:	4b0e      	ldr	r3, [pc, #56]	; (80006b0 <MX_TIM6_Init+0x64>)
@@ -716,9 +716,9 @@ static void MX_TIM7_Init(void)
  80006d4:	4b11      	ldr	r3, [pc, #68]	; (800071c <MX_TIM7_Init+0x64>)
  80006d6:	2200      	movs	r2, #0
  80006d8:	609a      	str	r2, [r3, #8]
-  htim7.Init.Period = 3749;
+  htim7.Init.Period = 7499;
  80006da:	4b10      	ldr	r3, [pc, #64]	; (800071c <MX_TIM7_Init+0x64>)
- 80006dc:	f640 62a5 	movw	r2, #3749	; 0xea5
+ 80006dc:	f641 524b 	movw	r2, #7499	; 0x1d4b
  80006e0:	60da      	str	r2, [r3, #12]
   htim7.Init.AutoReloadPreload = TIM_AUTORELOAD_PRELOAD_DISABLE;
  80006e2:	4b0e      	ldr	r3, [pc, #56]	; (800071c <MX_TIM7_Init+0x64>)
